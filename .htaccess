@@ -1,0 +1,17 @@
+# Set default index file
+DirectoryIndex index.html
+
+# Prevent directory listing
+Options -Indexes
+
+# Custom Error Document
+ErrorDocument 404 /404.html
+
+# Allow access to HTML files
+<FilesMatch "\.(html|htm)$">
+    Order allow,deny
+    Allow from all
+</FilesMatch>
+
+# Redirect from old page to new page (Example)
+# Redirect 301 /oldpage.html /newpage.html
