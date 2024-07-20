@@ -77,7 +77,7 @@
 }
 
 .solution.show {
-    max-height: 100px; /* Adjust based on content */
+    max-height:fit-content; /* Adjust based on content */
 }
     
     </style>
@@ -121,67 +121,67 @@
 
 <h1 style="text-align: left;">Python exercise questions - Part 1</h1><div><br /></div> <h3 style="text-align: left;">Write a simple program that accomplises the following task.</h3><div><br /></div><p style="text-align: left;">1 Store a message in a variable and print that message.</p>
 <button class="reveal-btn" onclick="toggleSolution('solution1')">Show/Hide Solution</button>
-<div id="solution1" class="solution">
-  <p>Solution: </p>
+<div id="solution1" class="solution" >
+  <div ><b>Solution:&nbsp;</b></div><div>&nbsp; &nbsp; &nbsp;message = 'I am a good programmer'</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</div><div>&nbsp; &nbsp; &nbsp;print(message)</div><div><br /></div><div><span style="color: #2b00fe;">&gt;&gt;I am a good programmer</span></div><div><br /></div><div><br /></div>
 </div>
 
 <div><br /></div><div><br /></div><p style="text-align: left;">2 Store a message in a variable, and print that message. Then change the value of your variable to a new message, print a new message.</p>
 <button class="reveal-btn" onclick="toggleSolution('solution2')">Show/Hide Solution</button>
 <div id="solution2" class="solution">
-  <p>Solution: </p>
+  <div><br /></div><div><b>Solution:&nbsp;</b></div><div><br /></div><div>&nbsp; &nbsp; message = 'I like Python programming language'</div><div>&nbsp;&nbsp;</div><div>&nbsp; &nbsp; print(message)</div><div><br /></div><div>&nbsp; &nbsp; message = 'I practice Python everyday'</div><div><br /></div><div>&nbsp; &nbsp; print(message)</div><div><br /></div><div><span style="color: #2b00fe;">&gt;&gt;I like Python programming language</span></div><div><span style="color: #2b00fe;">&gt;&gt;I practice Python everyday</span></div><div><span style="color: #2b00fe;"><br /></span></div><div><span style="color: #2b00fe;"><br /></span></div><div><br /></div>
 </div>
 
 
 <div><br /></div><div><br /></div><p style="text-align: left;">3 Store a person's name in a variable, and print a message to that person. Your message can be anything like, 'Hello James!'</p>
 <button class="reveal-btn" onclick="toggleSolution('solution3')">Show/Hide Solution</button>
 <div id="solution3" class="solution">
-  <p>Solution: </p>
+  <div><span>Solution:&nbsp;</span></div><div><span><br /></span></div><div><span>&nbsp; &nbsp; name = 'Sandy'</span></div><div><span><br /></span></div><div><span>&nbsp; &nbsp; print("Hello " + name + ", how are you today?")</span></div><div><span><br /></span></div><div><span style="color: #2b00fe;">&gt;&gt;Hello Sandy, how are you today?</span></div><div><span><br /></span></div><div><span><br /></span></div>
 </div>
 
 
 <div><br /></div><div><br /></div><p style="text-align: left;">4 Store a person's name in a variable, and then print the person's name in lowercase, uppercase and titlecase.</p>
 <button class="reveal-btn" onclick="toggleSolution('solution4')">Show/Hide Solution</button>
 <div id="solution4" class="solution">
-  <p>Solution: </p>
+  <div><span>Solution:&nbsp;</span></div><div><span><br /></span></div><div><span>&nbsp; &nbsp; name = 'Calsie'</span></div><div><span><br /></span></div><div><span>&nbsp; &nbsp; print(name.upper())</span></div><div><span>&nbsp;</span></div><div><span>&nbsp; &nbsp; print(name.lower())</span></div><div><span><br /></span></div><div><span>&nbsp; &nbsp; print(name.title())</span></div><div><span><br /></span></div><div><span style="color: #2b00fe;">&gt;&gt;CALSIE</span></div><div><span style="color: #2b00fe;">&gt;&gt;calsie</span></div><div><span style="color: #2b00fe;">&gt;&gt;Calsie</span></div><div><br /></div>
 </div>
 
 
 <div><br /></div><div><br /></div><p style="text-align: left;">5 Find a famous quote from a person you admire. Print the quote and name of the person. Your output can look something like this,&nbsp;<br />'Tim Berners Lee once said "We can't blame the technology when we make mistakes." '</p>
 <button class="reveal-btn" onclick="toggleSolution('solution5')">Show/Hide Solution</button>
 <div id="solution5" class="solution">
-  <p>Solution: </p>
+  <div>Solution:&nbsp;</div><div><br /></div><div>&nbsp; &nbsp; famous_quote = 'Albert Einstein once said, "We cannot solve our problems with the same thinking&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; we used when we created them." '</div><div><br /></div><div>&nbsp; &nbsp; print(famous_quote)</div><div><br /></div><div><span style="color: #2b00fe;">&gt;&gt;We cannot solve our problems with the same thinking we used when we created them</span></div><div><br /></div><div><br /></div>
 </div>
 
 <div style="text-align: left;"><br /></div><div><br /></div><p style="text-align: left;">6 Repeat the exercise (5) but this time, store the famous person's name in a variable and the quote onto another variable, and finally print the message.</p>
 <button class="reveal-btn" onclick="toggleSolution('solution6')">Show/Hide Solution</button>
 <div id="solution6" class="solution">
-  <p>Solution: </p>
+  <div><span>Solution:&nbsp;</span></div><div><br /></div><div>&nbsp; &nbsp; famous_quote = "If you can't explain it simply, you don't understand it well enough."</div><div><span><br /></span></div><div><span>&nbsp; &nbsp; famous_person = 'Albert Einstein'</span></div><div><span><br /></span></div><div><span>&nbsp; &nbsp; print(famous_person + ' once said, ' + ' " ' + famous_quote + "." + ' " ')</span></div><div><span><br /></span></div><div><span style="color: #2b00fe;">&gt;&gt;Albert Einstein once said, "If you can't explain it simply, you don't understand it well enough."</span></div><div><span><br /></span></div>
 </div>
 
 
 <div><br /></div><div><br /></div><p style="text-align: left;">7 Store a message including whitespaces and then use rstrip(), lstrip() and strip() functions on it and print it.</p>
 <button class="reveal-btn" onclick="toggleSolution('solution7')">Show/Hide Solution</button>
 <div id="solution7" class="solution">
-  <p>Solution: </p>
+  <div><span>Solution:&nbsp;</span></div><div><span><br /></span></div><div><span>&nbsp; &nbsp; message_1 = 'Hello, how is your practice?&nbsp; &nbsp;'</span></div><div><span>&nbsp;</span></div><div><span>&nbsp; &nbsp; print(message_1.rstrip())</span></div><div><br /></div><div>&nbsp; &nbsp; message_2 = '&nbsp; &nbsp; &nbsp;Programming is fun, isn't it?'</div><div><br /></div><div>&nbsp; &nbsp; print(message_2.lstrip())</div><div><br /></div><div>&nbsp; &nbsp; message_3 = '&nbsp; &nbsp; &nbsp;Walk through exercises like it's wind&nbsp; &nbsp;'</div><div><span style="color: #2b00fe;"><br /></span></div><div>&nbsp; &nbsp; print(message_3.strip())</div><div><br /></div><div><span style="color: #2b00fe;"><br /></span></div><div><span style="color: #2b00fe;">&gt;&gt;Hello, how is your practice?</span></div><div><span style="color: #2b00fe;">&gt;&gt;Programming is fun, isn't it?</span></div><div><span style="color: #2b00fe;">&gt;&gt;Walk through exercises like it's wind</span></div>
 </div>
 
 <div><br /></div><div><br /></div><p style="text-align: left;">8 Write addition, subtraction, multiplication and division operation that each result in the number 16.</p>
 <button class="reveal-btn" onclick="toggleSolution('solution8')">Show/Hide Solution</button>
 <div id="solution8" class="solution">
-  <p>Solution: </p>
+  <div>Solution:&nbsp;</div><div><br /></div><div>&nbsp; &nbsp; print(8+8)</div><div>&nbsp;</div><div>&nbsp; &nbsp; print(22-6)</div><div><br /></div><div>&nbsp; &nbsp;print(4*4)</div><div><br /></div><div>&nbsp; &nbsp;print(180/10)</div><div><br /></div><div><span style="color: #2b00fe;">&gt;&gt;16</span></div><div><span style="color: #2b00fe;">&gt;&gt;16</span></div><div><span style="color: #2b00fe;">&gt;&gt;16</span></div><div><span style="color: #2b00fe;">&gt;&gt;16</span></div><div><br /></div>
 </div>
 
 
 <div><br /></div><div><br /></div><p style="text-align: left;">9 Store your favourite number in a variable and then print that message to reveal that number.</p>
 <button class="reveal-btn" onclick="toggleSolution('solution9')">Show/Hide Solution</button>
 <div id="solution9" class="solution">
-  <p>Solution: </p>
+  <div>Solution:&nbsp;</div><div><br /></div><div>&nbsp; &nbsp; fav_num = '10'</div><div><br /></div><div>&nbsp; &nbsp; print("It's a secret, my favourite number is " + fav_num + ".")</div><div><br /></div><div><span style="color: #2b00fe;">&gt;&gt;It's a secret, my favourite number is 10.</span></div><div><br /></div>
 </div>
 
 <div><br /></div><div><br /></div><p style="text-align: left;">10 Place the parenthesis correctly to get the desired answer.<br />a = 5<br />b = 9<br />c = 12&nbsp;<br />a + c - b = 8</p>
 <button class="reveal-btn" onclick="toggleSolution('solution10')">Show/Hide Solution</button>
 <div id="solution10" class="solution">
-  <p>Solution: </p>
+  <div>Solution:&nbsp;</div><div><br /></div><div>&nbsp; &nbsp; a = 5</div><div>&nbsp; &nbsp; b = 9</div><div>&nbsp; &nbsp; c = 12</div><div><br /></div><div>&nbsp; &nbsp; print(a + (c - b))</div><div><br /></div><div><span style="color: #2b00fe;">&gt;&gt; 8</span></div><div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</div>
 </div>
 
 
