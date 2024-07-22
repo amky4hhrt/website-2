@@ -43,6 +43,40 @@
             border-width: 1px 0;
             box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
           }
+             /* sliding effect */
+
+             .coding-problem {
+    margin-bottom: 20px;
+}
+
+/* .solution {
+    display: none;
+    margin-top: 10px;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border: 1px solid #ddd;
+} */
+
+.reveal-btn {
+    margin-top: 10px;
+    cursor: pointer;
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+}
+
+/* styles.css */
+.solution {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+}
+
+.solution.show {
+    max-height:fit-content; /* Adjust based on content */
+}
     
     
     </style>
@@ -83,7 +117,39 @@
 
 
 <div class="container">
-  <h1 style="text-align: left;">Python exercise questions - Part 2</h1><div><br /></div><h3 style="text-align: left;">Write a simple program that accomplises the following task</h3><div><br /></div><div><br /></div><p>1 Store your friends names in a list and then print each friends name each at a time.</p><p><br /></p><p>2 Begin with the exercise(1) and print a personalised message to each of your friend.</p><p><br /></p><p>3 Make your own list about tourist places, vehicles you like and print a message.</p><p><br /></p><p>4 If you could invite anyone you wish, who would you invite?, make a list of persons who you would like to invite?, make a list of persons who you would like to invite to dinner and print a message to each person to invite them.</p><p><br /></p><p>5 You just came to know that one of your guest can't make to the dinner, so you need to send out a new set of invitation. You'll have to think of someone else to invite.</p><p><br /></p><p>6 You just found a bigger dinner table, so you want to invite three more people now. Modify the list to add three more people at a start, at the middle and at last.</p><p><br /></p><p>7 Think of at least 5 places in the world you would like to visit.</p><p>(i) Make a list of these places, make sure it is not in alphabetical order.</p><p>(ii) Print your list in orignal order.</p><p>(iii) Use sorted() function to print the list in alphabetical order.</p><p>(iv) Print the orignal list showing that is isn't modified.</p><p><br /></p><p>8 Intentional Error: If you haven't received an index error, try to make one happen.</p><p><br /></p><p>9 Think of at least three kinds of your favourite pizzas, store these pizza names in a list, and then use a for loop to print each pizza.</p><p><br /></p><p>10 Think of at least three different animals that are domestic. Use a for loop to print the animal name along with a message.</p>
+  <h1 style="text-align: left;">Python exercise questions - Part 2</h1><div><br /></div><h3 style="text-align: left;">Write a simple program that accomplises the following task</h3><div><br /></div><div><br /></div><p>1 Store your friends names in a list and then print each friends name each at a time.</p>
+  <button class="reveal-btn" onclick="toggleSolution('solution1')">Show/Hide Solution</button>
+<div id="solution1" class="solution" >
+  <div>Solution:&nbsp;</div><div><br /></div><div>&nbsp; &nbsp; my_friends = ['Jake','Amy','Calsie']</div><div>&nbsp; &nbsp;</div><div>&nbsp; &nbsp; print(my_friends[0])</div><div>&nbsp; &nbsp; print(my_friends[1])</div><div>&nbsp; &nbsp; print(my_friends[2])</div><div><br /></div><div><span style="color: #2b00fe;">&gt;&gt;Jake</span></div><div><span style="color: #2b00fe;">&gt;&gt;Amy</span></div><div><span style="color: #2b00fe;">&gt;&gt;Calsie</span></div><div><br /></div><div><br /></div>
+</div>
+
+  <p><br /></p>
+  
+  
+  <p>2 Begin with the exercise(1) and print a personalised message to each of your friend.</p>
+  <button class="reveal-btn" onclick="toggleSolution('solution2')">Show/Hide Solution</button>
+  <div id="solution2" class="solution" >
+    <div>Solution:&nbsp;</div><div><br /></div><div>&nbsp; &nbsp; my_friends = ['Jake','Amy','Calsie']</div><div>&nbsp;&nbsp;</div><div>&nbsp; &nbsp; print("Hello " + my_friends[0] + " ,how are you?")</div><div>&nbsp; &nbsp; print("Hello " + my_friends[1] + " ,how are you?")</div><div>&nbsp; &nbsp; print("Hello " + my_friends[2] + " ,how are you?")</div><div><br /></div><div><span style="color: #2b00fe;">&gt;&gt;Hello Jake, how are you?</span></div><div><span style="color: #2b00fe;">&gt;&gt;Hello Amy, how are you?</span></div><div><span style="color: #2b00fe;">&gt;&gt;Hello Calsie, how are you?</span></div><div><br /></div>
+  </div><p><br /></p>
+ 
+  
+  <p>3 Make your own list about tourist places, vehicles you like and print a message.</p>
+  <button class="reveal-btn" onclick="toggleSolution('solution3')">Show/Hide Solution</button>
+<div id="solution3" class="solution" >
+  <div>Solution:&nbsp;</div><div><br /></div><div>&nbsp; &nbsp; vehicles = ['BMW','Mercedes','Toyota','Bugati']</div><div>&nbsp; &nbsp;&nbsp;</div><div>&nbsp; &nbsp; print("I would like to own a " + vehicles[0] + " one day.")</div><div>&nbsp; &nbsp; print("I would like to own a " + vehicles[1] + " one day.")</div><div>&nbsp; &nbsp; print("I would like to own a " + vehicles[2] + " one day.")</div><div>&nbsp; &nbsp; print("I would like to own a " + vehicles[3] + " one day.")</div><div><br /></div><div><span style="color: #2b00fe;">&gt;&gt;I would like to own a BMW one day.</span></div><div><span style="color: #2b00fe;">&gt;&gt;I would like to own a Mercedes one day.</span></div><div><span style="color: #2b00fe;">&gt;&gt;I would like to own a Toyota one day.</span></div><div><span style="color: #2b00fe;">&gt;&gt;I would like to own a Bugati one day.</span></div><div><br /></div>
+  
+</div><p><br /></p>
+  
+  <p>4 If you could invite anyone you wish, who would you invite?, make a list of persons who you would like to invite?, make a list of persons who you would like to invite to dinner and print a message to each person to invite them.</p>
+  
+  <button class="reveal-btn" onclick="toggleSolution('solution4')">Show/Hide Solution</button>
+<div id="solution4" class="solution" >
+<div>Solution:&nbsp;</div><div><br /></div><div>&nbsp; &nbsp; dinner_invite = ['Jake','Amy','Calsie','Ves','Benjamin']</div><div>&nbsp;&nbsp;</div><div>&nbsp; &nbsp; print("Hello " + dinner_invite[0] + " , I would like to invite you to the dinner tonight, please come!")</div><div>&nbsp; &nbsp; print("Hello " + dinner_invite[1] + " , I would like to invite you to the dinner tonight, please come!")</div><div>&nbsp; &nbsp; print("Hello " + dinner_invite[2] + " , I would like to invite you to the dinner tonight, please come!")</div><div>&nbsp; &nbsp; print("Hello " + dinner_invite[3] + " , I would like to invite you to the dinner tonight, please come!")</div><div>&nbsp; &nbsp; print("Hello " + dinner_invite[4] + " , I would like to invite you to the dinner tonight, please come!")</div><div><br /></div><div><span style="color: #2b00fe;">&gt;&gt;Hello Jake, I would like to invite you to the dinner tonight, please come!</span></div><div><span style="color: #2b00fe;">&gt;&gt;Hello Amy, I would like to invite you to the dinner tonight, please come!</span></div><div><span style="color: #2b00fe;">&gt;&gt;Hello Calsie, I would like to invite you to the dinner tonight, please come!</span></div><div><span style="color: #2b00fe;">&gt;&gt;Hello&nbsp; Ves, I would like to invite you to the dinner tonight, please come!</span></div><div><span style="color: #2b00fe;">&gt;&gt;Hello Benjamin, I would like to invite you to the dinner tonight, please come!</span></div>
+</div>
+  <p><br /></p>
+  
+  
+  <p>5 You just came to know that one of your guest can't make to the dinner, so you need to send out a new set of invitation. You'll have to think of someone else to invite.</p><p><br /></p><p>6 You just found a bigger dinner table, so you want to invite three more people now. Modify the list to add three more people at a start, at the middle and at last.</p><p><br /></p><p>7 Think of at least 5 places in the world you would like to visit.</p><p>(i) Make a list of these places, make sure it is not in alphabetical order.</p><p>(ii) Print your list in orignal order.</p><p>(iii) Use sorted() function to print the list in alphabetical order.</p><p>(iv) Print the orignal list showing that is isn't modified.</p><p><br /></p><p>8 Intentional Error: If you haven't received an index error, try to make one happen.</p><p><br /></p><p>9 Think of at least three kinds of your favourite pizzas, store these pizza names in a list, and then use a for loop to print each pizza.</p><p><br /></p><p>10 Think of at least three different animals that are domestic. Use a for loop to print the animal name along with a message.</p>
 
 </div>
 
@@ -159,7 +225,17 @@
 
 
 </footer>
+<script>
 
+function toggleSolution(id) {
+    var solution = document.getElementById(id);
+    if (solution.classList.contains("show")) {
+        solution.classList.remove("show");
+    } else {
+        solution.classList.add("show");
+    }
+}
+</script>
     <script src="../../dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
